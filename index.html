@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video app</title>
+</head>
+<body>
+    <h1>Video App</h1>
+
+    
+
+        <h2>Upload Video</h2>
+        <form method="post" action="/upload" enctype="multipart/form-data">
+          <input type="file" name="video" />
+          <button type="submit">Upload</button>
+        </form>
+      <h2>Download Video</h2>
+        <form action="/download-video">
+          <button type="submit">Download</button>
+        </form>
+        <h2>Stream Video</h2>
+
+        <form method="get" action="/stream" enctype="multipart/form-data">
+            <button type="submit" class="btn" onclick="enabledownload()">Stream</button>
+          </form>
+
+      
+    
+</body>
+</html>
